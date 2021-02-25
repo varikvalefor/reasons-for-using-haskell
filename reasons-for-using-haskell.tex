@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{axiom}{Axiom}
+\renewcommand{\qedsymbol}{Q.E.D.}
+\title{Reasons for Using Haskell}
+\author{Varik Valefor}
+\begin{document}
+	\maketitle
+	\section{Definitions}
+		\[
+			h := \textrm{Haskell}.
+		\]
+		Where $l$ denotes an arbitrary programming language,
+		\[
+			A := \left\{l: \textrm{VARIK HAS USED } l\right\} - h.
+		\]
+	\section{Arguments}
+	\begin{axiom}[The Fundamental Rule of Language Superiority]
+		For all programming languages $a$, for all programming languages $b$, $a$ is superior to $b$ if each following condition is met:
+		\begin{itemize}
+			\item The readability of $a$ source code is greater than the readability of $b$ source code.
+			\item The ease of writing $a$ source code is greater than the ease of writing $b$ source code.
+			\item The efficiency of $a$'s best compiler is greater than or approximately equal to the efficiency of $b$'s best compiler.
+			\item The ease of searching for security vulnerabilities in $a$ programs is greater than the ease of searching for security vulnerabilities in $b$ programs.
+			\item The documentation of $a$ is superior to the documentation of $b$.
+			\item The ease of maintaining $a$ programs is greater than the ease of maintaining $b$ programs.
+		\end{itemize}
+	\end{axiom}
+	\begin{axiom}
+		For all $a \in A$, the ease of reading $h$ source code is greater than
+		the ease of reading $a$ source code.
+	\end{axiom}
+	\begin{axiom}
+		For all $a \in A$, the ease of writing $h$ source code is greater than
+		the ease of reading $a$ source code.
+	\end{axiom}
+	\begin{axiom}
+		For all $a \in A$, the efficiency of the best $a$ compiler is less than
+		or approximately equal to the efficiency of the best $h$ compiler.
+	\end{axiom}
+	\begin{thm}
+		For all $a \in A$, the ease of searching for
+		security vulnerabilities in $h$ programs is greater than the
+		ease of searching for security vulnerabilities in $a$ programs.
+	\end{thm}
+	\begin{proof}
+		For all $a \in A$, the ease of reading $a$ source code is
+		less than the ease of reading $h$ source code.
+
+		For any computer program $p$ which is written in a programming language
+		$l$, the ease of searching for security vulnerabilities in $p$ is
+		proportional to the ease of reading $l$ source code.
+
+		Therefore, for all $a \in A$, the ease of searching for security
+		vulnerabilities in $h$ programs is greater than the ease of searching
+		for security vulnerabilities in $a$ programs.
+	\end{proof}
+	\begin{thm}
+		For all $a \in A$, the documentation of $h$ is superior to the
+		documentation of $a$.
+	\end{thm}
+	\begin{proof}
+		Assume that for all programming languages $a$, for all programming
+		languages $b$, $a$'s documentation is superior to $b$'s documentation
+		if there exists a well-written, mathematics-based specification of $a$
+		and there does not exist a well-written, mathematics-based
+		specification of $b$.
+
+		There exists a well-written, mathematics-based specification of $h$.
+
+		For all $a \in A$, there does not exist a well-written,
+		mathematics-based specification of $a$.
+
+		Therefore, for all $a \in A$, the documentation of $h$ is superior to
+		the documentation of $a$.
+	\end{proof}
+	\begin{thm}
+		%For all $a \in A$, the ease of maintaining $h$ programs is greater than
+		%the ease of maintaining $a$ programs.
+		$\forall a \in A, \ x(h) > x(a)$, where for all programming languages
+		$a$, $x(a)$ denotes the ease of maintaining $a$ programs.
+	\end{thm}
+	\begin{proof}
+		For all computer programming languages $a$, let $w(a)$ denote the ease
+		of writing $a$ programs, let $r(a)$ denote the ease of reading $a$
+		programs, and let $x(a)$ denote the ease of maintaining $a$ programs.
+
+		For all programming languages $a$, for all programming languages $b$,
+		\[
+			x(a) > x(b) \iff \Big(r(a) > r(b)\Big) \land \Big(w(a) > w(b)\Big).
+		\]
+
+		\[
+			\forall a \in A, \ r(h) > r(a).
+		\]
+
+		\[
+			\forall a \in A, \ w(h) > w(a).
+		\]
+
+		\[
+			\therefore \forall a \in A, \ x(h) > x(a).
+		\]
+	\end{proof}
+\end{document}
